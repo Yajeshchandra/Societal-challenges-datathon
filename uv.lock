@@ -16,7 +16,9 @@ dependencies = [
     { name = "lime" },
     { name = "numpy" },
     { name = "pandas" },
+    { name = "pyreadstat" },
     { name = "ruff" },
+    { name = "sas7bdat" },
     { name = "scikit-learn" },
     { name = "seaborn" },
     { name = "shap" },
@@ -29,7 +31,9 @@ requires-dist = [
     { name = "lime", specifier = ">=0.2.0.1" },
     { name = "numpy", specifier = ">=2.3.3" },
     { name = "pandas", specifier = ">=2.3.2" },
+    { name = "pyreadstat", specifier = ">=1.3.1" },
     { name = "ruff", specifier = ">=0.13.2" },
+    { name = "sas7bdat", specifier = ">=2.2.3" },
     { name = "scikit-learn", specifier = ">=1.7.2" },
     { name = "seaborn", specifier = ">=0.13.2" },
     { name = "shap", specifier = ">=0.48.0" },
@@ -1099,6 +1103,15 @@ wheels = [
 ]
 
 [[package]]
+name = "narwhals"
+version = "2.10.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/56/e5/ef07d31c2e07d99eecac8e14ace5c20aeb00ecba4ed5bb00343136380524/narwhals-2.10.0.tar.gz", hash = "sha256:1c05bbef2048a4045263de7d98c3d06140583eb13d796dd733b2157f05d24485", size = 582423, upload-time = "2025-10-27T17:55:55.632Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/29/13/024ae0586d901f8a6f99e2d29b4ae217e8ef11d3fd944cdfc3bbde5f2a08/narwhals-2.10.0-py3-none-any.whl", hash = "sha256:baed44e8fc38e800e3a585e3fa9843a7079a6fad5fbffbecee4348d6ac52298c", size = 418077, upload-time = "2025-10-27T17:55:53.709Z" },
+]
+
+[[package]]
 name = "nbclient"
 version = "0.10.2"
 source = { registry = "https://pypi.org/simple" }
@@ -1481,6 +1494,28 @@ wheels = [
 ]
 
 [[package]]
+name = "pyreadstat"
+version = "1.3.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "narwhals" },
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/b7/d6/7e320a91eb66b9158cc428b62baba4f95a2d384af46a94225b61445a2e8a/pyreadstat-1.3.1.tar.gz", hash = "sha256:5e22b4000570cc0b0b850c7fedc13129546729ca413d67697ede0074423b1ef6", size = 610773, upload-time = "2025-08-14T13:58:15.855Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f5/61/48dc6090e999db55920e03c60fe07a4e365cdfb4a3276dc31a983e0d1361/pyreadstat-1.3.1-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:62b25a9b41902161ba1887acdb4121ec792e055649f2f92cca0bc552526a7d6d", size = 622469, upload-time = "2025-08-14T13:58:04.796Z" },
+    { url = "https://files.pythonhosted.org/packages/1d/74/3b1831bb937a69ca2ffc807a1be984792cefa01083d5c3edac8c9c0a9af9/pyreadstat-1.3.1-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:b107199a310880ef8fb509068888a7242d5ae2b27f658b4feddf02b77da14c0f", size = 621649, upload-time = "2025-08-14T13:58:06.563Z" },
+    { url = "https://files.pythonhosted.org/packages/c8/26/54838b93bf9e710a2b703158dca238b3bc04369d9ceb7dbba5a4728b5587/pyreadstat-1.3.1-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:abe59aa450a4e0b677e17036500da2c7b6f27f28d5d7ca7d09e47d1a484662b8", size = 634119, upload-time = "2025-08-14T13:58:08.789Z" },
+    { url = "https://files.pythonhosted.org/packages/cb/38/1a6da8a50cbc1384128c818582dce3c31269afa82258d74cd677bffd503f/pyreadstat-1.3.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:38f296cede7b02bbefce44dcc1a1713bf7b143fac82fd8b7e13bdf44a1eb21e7", size = 665371, upload-time = "2025-08-14T13:58:10.909Z" },
+    { url = "https://files.pythonhosted.org/packages/06/74/1090e6cfe3ea842f009394feedef3203c19d78b91ab14356cbbdeb6f0ac6/pyreadstat-1.3.1-cp313-cp313-win_amd64.whl", hash = "sha256:de2e258ce3b3c8c19a0adcd33a835b8141028f07cf2aa7f950af2250150deb9a", size = 2396063, upload-time = "2025-08-14T13:58:14.231Z" },
+    { url = "https://files.pythonhosted.org/packages/d2/5f/33df65ab9dc182ffe398df9b74f13466321e49b20b5f5f2c58f9cac326b4/pyreadstat-1.3.1-cp314-cp314-macosx_10_15_x86_64.whl", hash = "sha256:2908809bf9cf70aff8ca28cecd983ea9173303df7963fa4c046862bd12f1c8ee", size = 576574, upload-time = "2025-10-29T15:41:06.545Z" },
+    { url = "https://files.pythonhosted.org/packages/a8/3b/c0b195d6c0328ed0d282d0cc71ad18d812aaa9d43914a6be2f34830e224f/pyreadstat-1.3.1-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:640bbac2b6314536eb0b0ad47dbc40380193a6911859d9a2e01f3b2ffb2f33c8", size = 531323, upload-time = "2025-10-29T15:41:08.337Z" },
+    { url = "https://files.pythonhosted.org/packages/0f/76/197acc95ec2365fafb6655153108456b8632f699815896509fca042e95f0/pyreadstat-1.3.1-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:859412f7d33bf71ce54aa0fafb9ff8f6cc91b172d6266d0e11326ce8c5dbca1d", size = 3003463, upload-time = "2025-10-29T15:41:12.322Z" },
+    { url = "https://files.pythonhosted.org/packages/ca/4c/3ba102027e1caf9cd559f5904c5c9dd5ec9013c6133d4059e15753492ca8/pyreadstat-1.3.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:b5815747282dc499d20ca8bbe55f62117f0ebc84769a44eca3b49211de2c7296", size = 3075976, upload-time = "2025-10-29T15:41:15.533Z" },
+    { url = "https://files.pythonhosted.org/packages/17/29/94970c9fa9f1fe58a6d5aec7e057edd6150d37bea539103566df82f00908/pyreadstat-1.3.1-cp314-cp314-win_amd64.whl", hash = "sha256:0d61a76da9c9790e0519d2a05eaad435721cab15450bfbd16e14d549293ea55a", size = 2444711, upload-time = "2025-10-29T15:41:17.536Z" },
+]
+
+[[package]]
 name = "python-dateutil"
 version = "2.9.0.post0"
 source = { registry = "https://pypi.org/simple" }
@@ -1764,6 +1799,15 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/ee/bd/d9f33a73de84fafd0146c6fba4f497c4565fe8fa8b46874b8e438869abc2/ruff-0.13.2-py3-none-win_amd64.whl", hash = "sha256:17d95fb32218357c89355f6f6f9a804133e404fc1f65694372e02a557edf8585", size = 13324004, upload-time = "2025-09-25T14:54:06.05Z" },
     { url = "https://files.pythonhosted.org/packages/c3/12/28fa2f597a605884deb0f65c1b1ae05111051b2a7030f5d8a4ff7f4599ba/ruff-0.13.2-py3-none-win_arm64.whl", hash = "sha256:da711b14c530412c827219312b7d7fbb4877fb31150083add7e8c5336549cea7", size = 12484437, upload-time = "2025-09-25T14:54:08.022Z" },
 ]
+
+[[package]]
+name = "sas7bdat"
+version = "2.2.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "six" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/4d/7b/d41d280b12c776e67c840bace0e5f02acda6adb13cd1fbb04293ece0bc3c/sas7bdat-2.2.3.tar.gz", hash = "sha256:484c609d962442203c15bc719a638de992a23cd13bc1971a5af6dfb0daf9f797", size = 16053, upload-time = "2019-07-15T15:29:53.504Z" }
 
 [[package]]
 name = "scikit-image"
