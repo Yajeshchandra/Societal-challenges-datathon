@@ -82,28 +82,88 @@ Empty/blank = Question not applicable or skipped
 | `OccasionsWithHeavyDrinking_30Days` | continuous | Number of occasions |
 
 ---
+## 3. AUDIOMETRY (`audiometry.csv`)
+**Purpose:** Hearing status, hearing difficulty, and hearing-loss causes (AUQ_L)
 
-### 3. AUDIOMETRY (`audiometry.csv`)
-**Purpose:** Hearing status and hearing loss
+---
 
-| Variable | Values | Meaning |
-|----------|--------|---------|
+### **AUQ054 — Hearing Status (Without Hearing Aid)**  
+| Variable | Code | Meaning |
+|---------|------|---------|
 | `HearingStatus_NoAid` | 1 | Excellent |
 | | 2 | Good |
-| | 3 | Little trouble |
+| | 3 | A little trouble |
 | | 4 | Moderate trouble |
 | | 5 | A lot of trouble |
 | | 6 | Deaf |
+| | 77 | Refused |
+| | 99 | Don’t know |
+| | . | Missing / Not asked |
+
+---
+
+### **AUQ101 — Difficulty Hearing With Background Noise**  
+| Variable | Code | Meaning |
+|----------|------|----------|
 | `DifficultyHearing_WithBackgroundNoise` | 1 | Always |
 | | 2 | Usually |
 | | 3 | About half the time |
 | | 4 | Seldom |
 | | 5 | Never |
+| | 7 | Refused |
+| | 9 | Don’t know |
+| | . | Missing / Not asked |
+
+---
+
+### **AUQ144 — Last Hearing Test by Specialist**  
+| Variable | Code | Meaning |
+|----------|------|----------|
 | `LastHearingTest_Specialist` | 1 | Less than 1 year ago |
-| | 2 | 1-4 years ago |
-| | 3 | 5-9 years ago |
+| | 2 | 1–4 years ago |
+| | 3 | 5–9 years ago |
 | | 4 | 10+ years ago |
 | | 5 | Never |
+| | 7 | Refused |
+| | 9 | Don’t know |
+| | . | Missing / Not asked |
+
+---
+
+## **AUQ410A–AUQ410J — Main Causes of Hearing Loss (Multiple Response)**  
+**Interpretation:**  
+- Each variable represents one potential cause  
+- Interview instruction: **“CODE ALL THAT APPLY”**  
+- Multiple causes can be selected  
+- Missing (.) = cause not selected / not asked  
+
+| Variable | Code | Meaning |
+|----------|------|---------|
+| `reason_hearing_loss_A` (AUQ410A) | 1 | Genetic or hereditary |
+| | 77 | Refused |
+| | 99 | Don’t know |
+| | . | Not selected / Missing |
+| `reason_hearing_loss_B` (AUQ410B) | 2 | Ear infections (including fluid in ear) |
+| | . | Not selected / Missing |
+| `reason_hearing_loss_C` (AUQ410C) | 3 | Ear diseases (otosclerosis, Ménière’s, tumors) |
+| | . | Not selected / Missing |
+| `reason_hearing_loss_D` (AUQ410D) | 4 | Illness/infection (measles, meningitis, mumps) |
+| | . | Not selected / Missing |
+| `reason_hearing_loss_E` (AUQ410E) | 5 | Drugs/medications (ototoxic meds) |
+| | . | Not selected / Missing |
+| `reason_hearing_loss_F` (AUQ410F) | 6 | Head/neck injury or trauma |
+| | . | Not selected / Missing |
+| `reason_hearing_loss_G` (AUQ410G) | 7 | Loud brief noise (explosive impact) |
+| | . | Not selected / Missing |
+| `reason_hearing_loss_H` (AUQ410H) | 8 | Long-term noise exposure (machinery, tools, engines) |
+| | . | Not selected / Missing |
+| `reason_hearing_loss_I` (AUQ410I) | 9 | Aging |
+| | . | Not selected / Missing |
+| `reason_hearing_loss_J` (AUQ410J) | 10 | Other causes |
+| | . | Not selected / Missing |
+
+---
+
 
 ---
 
