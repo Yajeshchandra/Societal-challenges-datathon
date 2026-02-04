@@ -18,6 +18,8 @@ dependencies = [
     "shap>=0.48.0",
     "xgboost>=2.0.0",
     "imbalanced-learn>=0.12.0",
+    "catboost>=1.2",
+    "lightgbm>=4.0.0", 
 ]
 
 [tool.ruff.lint]
