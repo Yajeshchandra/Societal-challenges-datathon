@@ -20,6 +20,9 @@ dependencies = [
     "imbalanced-learn>=0.12.0",
     "catboost>=1.2",
     "lightgbm>=4.0.0", 
+    "ctgan>=0.7.5",
+    "sdv>=1.33",
+    "optuna",
 ]
 
 [tool.ruff.lint]
